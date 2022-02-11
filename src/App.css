@@ -1,37 +1,113 @@
+body {
+  font-family     : 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  color           : #09090a;
+  line-height     : 1.7;
+  font-size       : 19px;
+  background-color: #e0dcd8;
+  min-height      : 100vh;
+  position        : relative;
+  margin          : 0;
+  box-sizing      : border-box;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height        : 35px;
+  width         : 35px;
   pointer-events: none;
+  margin-left   : 0;
+}
+
+.project {
+  width              : auto;
+  /* border          : 1px solid #cccccc; */
+  margin             : 0 auto;
+  border-radius      : 6px;
+  background-color   : #31302e;
+  padding            : 0 1rem;
+  color              : #e0dcd8;
+}
+
+.main {
+  border          : 1px solid rgb(177, 174, 174);
+  width           : 85vw;
+  height          : 80vh;
+  padding         : 1%;
+  margin          : 2rem auto;
+  border-radius   : 6px;
+  background-color: azure;
+  box-shadow      : inset 0px 0px 2px 3px #ccc;
+  overflow        : auto;
+}
+
+.sub-main {
+  border       : 1px solid #ccc;
+  border-radius: 7px;
+  margin       : 0 auto;
+  padding      : 1em;
+  width        : 70%;
+}
+
+footer {
+  bottom          : 0;
+  width           : 100%;
+  background-color: #343A40;
+  color           : #bdb8b8;
+  box-shadow      : inset 0px -1px 6px 4px #ccc;
+  text-align      : center;
+  height          : 5.5vh;
+  font-size       : calc(10px + 1vmin);
+  padding         : .4em 0 0;
+  font-weight     : 200;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 10s linear;
   }
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height          : 2%;
+  display         : flex;
+  font-size       : calc(10px + 1vmin);
+  color           : white;
 }
 
-.App-link {
-  color: #61dafb;
+.navbar {
+  background-color: rgba(22, 22, 22, 0.8);
+  display         : flex;
+  justify-content : center;
+}
+
+.architect {
+  margin-top: .2em;
+  color     : #bdb8b8;
+}
+
+/*logo spin*/
+
+.rotate {
+  animation-duration       : 1s;
+  animation-timing-function: linear;
+  animation-delay          : 0s;
+  animation-iteration-count: infinite;
+  animation-direction      : normal;
+  animation-fill-mode      : none;
+  animation-play-state     : running;
+  animation-name           : App-logo-spin;
 }
 
 @keyframes App-logo-spin {
+
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
